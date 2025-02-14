@@ -11,7 +11,7 @@ $pdo = db_conn();
 
 //2. データ登録SQL作成
 //* PasswordがHash化→条件はlidのみ！！
-$stmt = $pdo->prepare("SELECT * FROM gs_user_table WHERE lid=:lid AND life_flg=0"); 
+$stmt = $pdo->prepare("SELECT * FROM skill_lake_user_table WHERE lid=:lid AND life_flg=0"); 
 $stmt->bindValue(':lid', $lid, PDO::PARAM_STR);
 $status = $stmt->execute();
 

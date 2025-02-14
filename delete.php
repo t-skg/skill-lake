@@ -9,7 +9,7 @@ sschk();
 $pdo = db_conn();
 
 //３．データ登録SQL作成
-$stmt = $pdo->prepare("DELETE FROM gs_user_table WHERE ID=:ID");
+$stmt = $pdo->prepare("DELETE FROM skill_lake_user_table WHERE ID=:ID");
 $stmt->bindValue(':ID', $ID, PDO::PARAM_INT);  //Integer（数値の場合 PDO::PARAM_INT)
 $status = $stmt->execute(); //実行
 

@@ -12,7 +12,7 @@ $lpw =$_POST['lpw'];
 
 //3．データ登録SQL作成
 $stmt = $pdo->prepare('INSERT INTO 
-              gs_user_table (id, lid, lpw) 
+              skill_lake_user_table (id, lid, lpw) 
               VALUES         (NULL, :lid, :lpw) ');
 
   //パスワードのハッシュ化

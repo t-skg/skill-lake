@@ -10,7 +10,10 @@ sschk();
 
 //2．データ取得SQL作成
 $pdo = db_conn();
-$sql    = "SELECT * FROM gs_user_table";
+
+//本番 
+$sql    = "SELECT * FROM skill_lake_user_table";
+
 $stmt   = $pdo->prepare($sql);
 $status = $stmt->execute();
 
@@ -68,12 +71,12 @@ $json = json_encode($values,JSON_UNESCAPED_UNICODE);
         
         <?php foreach($values as $v): ?>
           <tr>
-            <td><?=htmlspecialchars($v["id"], ENT_QUOTES, 'UTF-8')?></td>
+            <td><?=htmlspecialchars($v["ID"], ENT_QUOTES, 'UTF-8')?></td>
             <td><?=htmlspecialchars($v["lid"], ENT_QUOTES, 'UTF-8')?></td>
             <td><?=htmlspecialchars($v["lpw"], ENT_QUOTES, 'UTF-8')?></td>
             <?php if(isset($_SESSION["kanri_flg"]) && $_SESSION["kanri_flg"]=="1"): ?>
-              <td><a href="detail.php?ID=<?=urlencode($v["id"])?>">詳細</a></td>
-              <td><a href="delete.php?ID=<?=urlencode($v["id"])?>" onclick="return confirm('本当に削除しますか？');">削除</a></td>
+              <td><a href="detail.php?ID=<?=urlencode($v["ID"])?>">詳細</a></td>
+              <td><a href="delete.php?ID=<?=urlencode($v["ID"])?>" onclick="return confirm('本当に削除しますか？');">削除</a></td>
             <?php endif; ?>
           </tr>
         <?php endforeach; ?>

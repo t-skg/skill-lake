@@ -6,7 +6,7 @@ sschk();
 $pdo = db_conn();
 
 //データ登録SQL作成
-$stmt = $pdo->prepare("SELECT * FROM gs_user_table WHERE ID=:ID");
+$stmt = $pdo->prepare("SELECT * FROM skill_lake_user_table WHERE ID=:ID");
 $stmt->bindValue(":ID", $ID, PDO::PARAM_INT);
 $status = $stmt->execute();
 
