@@ -12,17 +12,16 @@ $lpw =$_POST['lpw'];
 
 //3．データ登録SQL作成
 $stmt = $pdo->prepare('INSERT INTO 
-              gs_user_table (ID, lid, lpw) 
+              gs_user_table (id, lid, lpw) 
               VALUES         (NULL, :lid, :lpw) ');
 
   //パスワードのハッシュ化
 $hashed_password = password_hash($lpw, PASSWORD_DEFAULT);
 
-
-
 $_SESSION["chk_ssid"]  = session_id();
 $_SESSION["kanri_flg"] = $val['kanri_flg'];
 $_SESSION["lid"]      = $val['lid'];
+
 //  4. バインド変数を用意
 $stmt->bindValue(':lid', $lid, PDO::PARAM_STR);
 $stmt->bindValue(':lpw', $hashed_password, PDO::PARAM_STR);

@@ -27,7 +27,7 @@ $val = $stmt->fetch();         //1レコードだけ取得する方法
 
 //5.該当１レコードがあればSESSIONに値を代入
 //入力したPasswordと暗号化されたPasswordを比較！[戻り値：true,false]
-$lpw = password_verify($lpw, $val["lpw"]); //$lpw = password_hash($lpw, PASSWORD_DEFAULT);   //パスワードハッシュ化
+$lpw = password_verify($lpw, $val["lpw"]); 
 if($lpw){ 
   //Login成功時
   $_SESSION["chk_ssid"]  = session_id();

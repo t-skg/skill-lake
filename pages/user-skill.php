@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 // ログインユーザーの情報を取得する処理（実際の実装に合わせて調整してください）
 $user = [
     'name' => '',
@@ -26,8 +23,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // 例: $user = $_POST; saveUserInfo($user);
 }
 ?>
-
-
 
 
 <!DOCTYPE html>
@@ -175,7 +170,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <label for="portfolioLink">ポートフォリオリンク:</label>
                     <input type="text" id="portfolioLink" name="portfolioLink">
                 </div>
-      
+
             <!-- 他のセクションは変更なし -->
 
             <button type="submit">登録</button>

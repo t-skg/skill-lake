@@ -62,12 +62,15 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
+    table-layout: fixed; /* 各セルの幅を固定する */
 }
 
 th, td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    word-wrap: break-word; /* 長い文字列を折り返し */
+    white-space: normal;   /* 折り返しを有効化 */
 }
 
 th {

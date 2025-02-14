@@ -6,6 +6,7 @@
     <title>SKILL LAKE</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="img/favicon.ico">
     <script src="js/script.js"></script>
 </head>
 <body>

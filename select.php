@@ -55,28 +55,30 @@ $json = json_encode($values,JSON_UNESCAPED_UNICODE);
   <div>
     <div class="container jumbotron">
 
-    <table>
-  <tr>
-    <th>ID</th>
-    <th>ユーザー名</th>
-    <th>パスワード</th>
-    <?php if(isset($_SESSION["kanri_flg"]) && $_SESSION["kanri_flg"]=="1"): ?>
-    <th>詳細 </th>
-    <th>削除</th>
-    <?php endif; ?>
-  </tr>
-  <?php foreach($values as $v): ?>
-    <tr>
-      <td><?=htmlspecialchars($v["ID"], ENT_QUOTES, 'UTF-8')?></td>
-      <td><?=htmlspecialchars($v["lid"], ENT_QUOTES, 'UTF-8')?></td>
-      <td><?=htmlspecialchars($v["lpw"], ENT_QUOTES, 'UTF-8')?></td>
-      <?php if(isset($_SESSION["kanri_flg"]) && $_SESSION["kanri_flg"]=="1"): ?>
-        <td><a href="detail.php?ID=<?=urlencode($v["ID"])?>">詳細</a></td>
-        <td><a href="delete.php?ID=<?=urlencode($v["ID"])?>" onclick="return confirm('本当に削除しますか？');">削除</a></td>
-      <?php endif; ?>
-    </tr>
-  <?php endforeach; ?>
-</table>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>ユーザー名</th>
+          <th>パスワード</th>
+          <?php if(isset($_SESSION["kanri_flg"]) && $_SESSION["kanri_flg"]=="1"): ?>
+          <th>詳細 </th>
+          <th>削除</th>
+          <?php endif; ?>
+        </tr>
+        
+        <?php foreach($values as $v): ?>
+          <tr>
+            <td><?=htmlspecialchars($v["id"], ENT_QUOTES, 'UTF-8')?></td>
+            <td><?=htmlspecialchars($v["lid"], ENT_QUOTES, 'UTF-8')?></td>
+            <td><?=htmlspecialchars($v["lpw"], ENT_QUOTES, 'UTF-8')?></td>
+            <?php if(isset($_SESSION["kanri_flg"]) && $_SESSION["kanri_flg"]=="1"): ?>
+              <td><a href="detail.php?ID=<?=urlencode($v["id"])?>">詳細</a></td>
+              <td><a href="delete.php?ID=<?=urlencode($v["id"])?>" onclick="return confirm('本当に削除しますか？');">削除</a></td>
+            <?php endif; ?>
+          </tr>
+        <?php endforeach; ?>
+      </table>
+
     </div>
   </div>
 

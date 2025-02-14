@@ -19,7 +19,5 @@ session_destroy();
 
 // 完全なURLでリダイレクト（例：http://yourdomain.com/index.php）
 header("Location: index.php");
-// $redirect_url ='http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . '/index.php';
-// header("Location: " . $redirect_url);
 exit();
 ?>
