@@ -20,7 +20,7 @@
 
 ## 3.DEMO SITE
 
-- https://d2v.sakura.ne.jp/skill-lake/select.php
+- https://d2v.sakura.ne.jp/skill-lake
 
 ## 4.ID/Pass
 
