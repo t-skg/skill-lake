@@ -1,6 +1,6 @@
 <img src="https://img.shields.io/badge/PHP-ccc.svg?logo=php&style=flat"> <img src="https://img.shields.io/badge/-HTML5-333.svg?logo=html5&style=flat"> <img src="https://img.shields.io/badge/-CSS3-1572B6.svg?logo=css3&style=flat"> <img src="https://img.shields.io/badge/Javascript-276DC3.svg?logo=javascript&style=flat">
 
-## 0.※PHP学習のためのテストサイトとなります。<br>　※一部のボタンのみ動作します。
+## 0.※PHP学習のために作成したテストサイトとなります。<br>　※一部のボタンのみ動作します。
 　　新規アカウント登録までの手順：<br>
 　　　ⅰ.トップページの「サインイン」を押下⇒ログイン画面⇒ログイン後ページ（ユーザーダッシュボード）⇒左上のロゴからトップページへ<br>
 　　　ⅱ.トップページの「お問い合わせ」を押下⇒データベース登録状況確認画面　※管理者アカウントの場合、編集・削除のボタンが出現。<br>
