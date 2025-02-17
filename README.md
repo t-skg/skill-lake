@@ -35,7 +35,7 @@
 
 ## 3.DEMO SITE
 
-- https://d2v.sakura.ne.jp/skill-lake
+-<a href="https://d2v.sakura.ne.jp/skill-lake" target="_blank" rel="noopener noreferrer">SKILL LAKE</a>
 
 ## 4.ID/Pass
 
